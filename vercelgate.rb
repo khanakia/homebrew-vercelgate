@@ -10,7 +10,7 @@ class Vercelgate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/khanakia/vercelgate/releases/download/v0.0.1/vercelgate_Darwin_x86_64.tar.gz"
-      sha256 "d3b2719146bb6210092707e26c7c07081d298e088f220671faea710786031b4b"
+      sha256 "f0e8169e023b7c7e0066fc1903c42c3f82e370c9d576304d4e88b898efb81db4"
 
       def install
         bin.install "vercelgate"
@@ -18,7 +18,7 @@ class Vercelgate < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/khanakia/vercelgate/releases/download/v0.0.1/vercelgate_Darwin_arm64.tar.gz"
-      sha256 "59d1a9b2ab8ce2c1aabfa0f5f2985810cea33796b228df9002fb0a6e9ee8b94d"
+      sha256 "e52dbdd57eb7637827626285cf5e2b90394a8c2f71d538bfb14c310721a0d7ab"
 
       def install
         bin.install "vercelgate"
@@ -30,7 +30,7 @@ class Vercelgate < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/khanakia/vercelgate/releases/download/v0.0.1/vercelgate_Linux_x86_64.tar.gz"
-        sha256 "f16a2a316ce4dc9a645fb350b82daf69bf231cfe8480118e3f37994f9937b860"
+        sha256 "c3a4b14286495d6ba84aabac751e0e53de7a09b4f992a10ebe7d48a9d4519dba"
 
         def install
           bin.install "vercelgate"
@@ -40,7 +40,7 @@ class Vercelgate < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/khanakia/vercelgate/releases/download/v0.0.1/vercelgate_Linux_arm64.tar.gz"
-        sha256 "dc24de48d85b93063782dcf18367cc985690b289435aa7e90b30bebd4d7758d1"
+        sha256 "db95de53c8f050a3dda15542512ca50d8bcdfe0f4611c21247a416303a1f6b78"
 
         def install
           bin.install "vercelgate"
